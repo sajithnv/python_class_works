@@ -1,0 +1,12 @@
+from tkinter import *
+t=Tk()
+t.geometry('400x400')
+f1=Frame(t,relief=SUNKEN,bd=10)
+f2=Frame(t,relief=GROOVE,bd=10)
+f1.pack(side=LEFT)
+f2.pack(side='left')
+l=Button(f1,text='Button1',bg='yellow')
+l2=Button(f2,text='Button2',bg='blue')
+l.pack()
+l2.pack()
+t.mainloop()
