@@ -1,0 +1,46 @@
+#built_in functions in __set__
+s={23,12,24,54,100,200}
+s2=set({54,67,100,200})
+print(s,s2)
+s.add(87)
+print(s,s2)
+s2.update({12,89})
+print(s,s2)
+s.remove(23)
+s.remove(100)
+s2.remove(100)
+print(s,s2)
+s.discard(200)
+s2.discard(200)
+print(s,s2)
+#s.remove(100)
+#s2.remove(100)
+#print(s,s2)
+s.discard(200)
+s2.discard(200)
+print(s,s2)
+print('__________________________')
+print('s:',s)
+print('s2:',s2)
+print('UNION__________________________')
+#operations in set
+# 1)__union__
+print(s|s2)
+print(s2|s)
+print(s.union(s2))
+print('INTERSECTION__________________________')
+
+# 2)__intersection__
+print(s&s2)
+print(s2&s)
+print(s.intersection(s2))
+print('DIFFERENCE__________________________')
+# 3)__difference__
+print(s-s2)
+print(s2-s)
+print(s.difference(s2))
+print('SYMMETRIC_DIFFERENCE__________________________')
+# 4)__symmetric_difference__
+print(s^s2)
+print(s2^s)
+print(s.symmetric_difference(s2))
