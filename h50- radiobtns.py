@@ -6,13 +6,13 @@ st=IntVar()
 def fun():
     s1=st.get()
     if s1==1:
-##        m.showinfo('alert','Advance DBMS')
+        m.showinfo('info','Advance DBMS')
         print('1.Advance DBMS')
     elif s1==2:
-##        m.showinfo('alert','Multimeadia & Animation')
+        m.showinfo('info','Multimeadia & Animation')
         print('2.Multimeadia & Animation')
     else:
-##        m.showinfo('alert','Data structure')
+        m.showwarning('alert','Data structure currently not available')
         print('3.Data structure')  
 rb1=Radiobutton(r,text='Advance DBMS',variable=st,value=1)
 rb2=Radiobutton(r,text='Multimeadia & Animation',variable=st,value=2)
