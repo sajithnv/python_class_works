@@ -8,11 +8,7 @@ print('socket created..')
 s.listen(3)
 while True:
     c,addr=s.accept()
-    msg=str(input('text somthing: '))
+    msg=str(input('text something: '))
     c.send(msg.encode('utf-8'))
-s.connect((h,port))
-m=s.recv(1000)
-m1=m.decode('utf-8')
-print(f'from server: {m1}')
-s.close()
+    s.close()
     
