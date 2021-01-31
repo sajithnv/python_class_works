@@ -25,8 +25,7 @@ t2=threading.Thread(target=run,args=(x,))
 t1.start()
 t2.start()
 '''
-#reading input in class
-
+#reading input from outside a class
 import threading as t
 class c1(t.Thread):
     def run(self,a):
@@ -34,11 +33,10 @@ class c1(t.Thread):
 class c2(t.Thread):
     def run(self,b):
         print(b)
-s=0        
 a=int(input(': '))
 b=int(input(': '))        
-t1=c1(a(a,))
-t2=c2(b(b,))
+t1=c1(a)
+t2=c2(b)
 t1.start()
 t2.start()
 
